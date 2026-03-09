@@ -1,0 +1,28 @@
+.
+├── Dockerfile
+├── README.md
+├── app
+│   ├── db.sqlite3
+│   ├── manage.py
+│   ├── mysite
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   └── webapp
+│       ├── __init__.py
+│       ├── admin.py
+│       ├── apps.py
+│       ├── migrations
+│       ├── models.py
+│       ├── templates
+│       ├── tests.py
+│       └── views.py
+├── docker-compose.yml
+├── install_django.sh
+├── requirements.txt
+└── temp.txt
+
+7 directories, 19 files
