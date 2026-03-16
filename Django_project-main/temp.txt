@@ -1,28 +1,71 @@
-.
-├── Dockerfile
-├── README.md
-├── app
-│   ├── db.sqlite3
-│   ├── manage.py
-│   ├── mysite
-│   │   ├── __init__.py
-│   │   ├── __pycache__
-│   │   ├── asgi.py
-│   │   ├── settings.py
-│   │   ├── urls.py
-│   │   └── wsgi.py
-│   └── webapp
-│       ├── __init__.py
-│       ├── admin.py
-│       ├── apps.py
-│       ├── migrations
-│       ├── models.py
-│       ├── templates
-│       ├── tests.py
-│       └── views.py
-├── docker-compose.yml
-├── install_django.sh
-├── requirements.txt
-└── temp.txt
-
-7 directories, 19 files
+Structure du dossier
+Le num�ro de s�rie du volume est 08EC-EA10
+C:.
+|   docker-compose.yml
+|   Dockerfile
+|   install_django.sh
+|   README.md
+|   requirements.txt
+|   temp.txt
+|   
+\---app
+    |   db.sqlite3
+    |   manage.py
+    |   
+    +---mysite
+    |   |   asgi.py
+    |   |   settings.py
+    |   |   urls.py
+    |   |   wsgi.py
+    |   |   __init__.py
+    |   |   
+    |   \---__pycache__
+    |           settings.cpython-311.pyc
+    |           settings.cpython-312.pyc
+    |           settings.cpython-314.pyc
+    |           urls.cpython-311.pyc
+    |           urls.cpython-312.pyc
+    |           urls.cpython-314.pyc
+    |           wsgi.cpython-311.pyc
+    |           wsgi.cpython-312.pyc
+    |           wsgi.cpython-314.pyc
+    |           __init__.cpython-311.pyc
+    |           __init__.cpython-312.pyc
+    |           __init__.cpython-314.pyc
+    |           
+    \---webapp
+        |   admin.py
+        |   apps.py
+        |   models.py
+        |   tests.py
+        |   views.py
+        |   __init__.py
+        |   
+        +---migrations
+        |   |   __init__.py
+        |   |   
+        |   \---__pycache__
+        |           __init__.cpython-311.pyc
+        |           __init__.cpython-312.pyc
+        |           
+        +---static
+        |   \---webapp
+        |       \---css
+        |               style.css
+        |               
+        +---templates
+        |       product.html
+        |       welcome.html
+        |       
+        \---__pycache__
+                admin.cpython-311.pyc
+                admin.cpython-312.pyc
+                apps.cpython-311.pyc
+                apps.cpython-312.pyc
+                models.cpython-311.pyc
+                models.cpython-312.pyc
+                views.cpython-311.pyc
+                views.cpython-312.pyc
+                __init__.cpython-311.pyc
+                __init__.cpython-312.pyc
+                
