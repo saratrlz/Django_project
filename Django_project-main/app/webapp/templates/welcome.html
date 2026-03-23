@@ -1,11 +1,59 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome</title>
-    <link rel="stylesheet" href="{% static 'webapp\css\style.css' %}">
+  <meta charset="UTF-8">
+  <title>Welcome to FrooFrooFresh</title>
+  <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}">
 </head>
 <body>
-    <h1>Welcome to my NEW Django App!</h1>
+
+  <div class="container"> <!-- Added container to center content -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h2 class="logo">FrooFrooFresh</h2>
+      <div class="nav-links">
+        <a href="{% url 'welcome' %}">Home</a>
+        <a href="{% url 'product' %}">Products</a>
+        <a href="{% url 'contact' %}">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to the Freshest Fruit Shop!</h1>
+        <p>Explore our colorful, hand-picked fruits 🍌🍍🍓</p>
+        <a href="{% url 'product' %}" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <h2>Why Choose Us?</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Fresh Fruits</h3>
+          <p>Picked daily from local farms for the best quality.</p>
+        </div>
+        <div class="feature">
+          <h3>Fast Delivery</h3>
+          <p>Get your fruits delivered right to your doorstep.</p>
+        </div>
+        <div class="feature">
+          <h3>Organic</h3>
+          <p>All fruits are 100% organic and chemical-free.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Fruit Shop - All rights reserved</p>
+    </footer>
+
+  </div> <!-- end container -->
+
 </body>
 </html>

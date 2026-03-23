@@ -1,11 +1,76 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to product page</title>
-    <link rel="stylesheet" href="{% static 'webapp\css\style.css' %}">
+  <meta charset="UTF-8">
+  <title>Our Products - FrooFrooFresh</title>
+  <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}">
 </head>
 <body>
-    <h1>Welcome to my PRODCUT Django App!</h1>
+
+  <div class="container"> <!-- Main container for spacing -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h2 class="logo">FrooFrooFresh</h2>
+      <div class="nav-links">
+        <a href="{% url 'welcome' %}">Home</a>
+        <a href="{% url 'product' %}">Products</a>
+        <a href="{% url 'contact' %}">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+      <h1>Our Fresh Fruits 🍓🍌🍍</h1>
+      <p>Hand-picked and delivered straight to your door!</p>
+    </header>
+
+    <!-- Product Grid -->
+    <section class="products">
+      <!-- Example Product 1 -->
+      <div class="card">
+        <img src="{% static 'webapp/images/apple.jpg' %}" alt="Apple">
+        <h3>Red Apple</h3>
+        <p>Sweet and crispy, perfect for snacks.</p>
+        <div class="price">$1.50 / pc</div>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+
+      <!-- Example Product 2 -->
+      <div class="card">
+        <img src="{% static 'webapp/images/banana.jpg' %}" alt="Banana">
+        <h3>Banana</h3>
+        <p>Ripe and ready to eat, full of energy.</p>
+        <div class="price">$0.50 / pc</div>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+
+      <!-- Example Product 3 -->
+      <div class="card">
+        <img src="{% static 'webapp/images/pineapple.jpg' %}" alt="Pineapple">
+        <h3>Pineapple</h3>
+        <p>Juicy tropical fruit, perfect for smoothies.</p>
+        <div class="price">$3.00 / pc</div>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+
+      <!-- Example Product 4 -->
+      <div class="card">
+        <img src="{% static 'webapp/images/strawberry.jpg' %}" alt="Strawberries">
+        <h3>Strawberries</h3>
+        <p>Fresh and sweet, perfect for desserts.</p>
+        <div class="price">$4.50 / box</div>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Fruit Shop - All rights reserved</p>
+    </footer>
+
+  </div> <!-- End container -->
+
 </body>
 </html>
